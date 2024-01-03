@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@400;500;600;700;800&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <title>Your Device Info.</title>
+</head>
+<style>
+
+    body{
+        background: url(https://source.unsplash.com/random/?newyork&2) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+        background-color:antiquewhite;
+    }
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    color:darkblue;
+}
+.list-style{
+    font-weight: 500;
+    color: black;
+    font-size: 35px;
+    list-style: none;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.ft-p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+}
+.link{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 3px 2px 7px rgba(0,0,0,0.6);
+
+}
+.cont{
+   margin-left: 10px;
+   margin-right: 10px;
+   
+    margin-top: 3.5rem;
+    border-radius: 12px;
+    border: white 1px solid;
+    padding: 12px;
+    backdrop-filter:blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+@media only screen and (max-width: 600px){
+    .list-style{
+   font-size: 22px;
+}
+.heading{
+    font-size: 2rem;
+   }
+}
+</style>
+<body>
+     <div class="main" id="device-info">
+    
+        <div class="cont">
+            <h1 class="heading">Device Information</h1>
+        <ul>
+            <li class="list-style"><strong>Device Type:</strong> <span id="device-type"></span></li>
+            <li class="list-style"><strong>Browser:</strong> <span id="browser"></span></li>
+            <li class="list-style"><strong>Operating System:</strong> <span id="os"></span></li>
+            <li class="list-style"><strong>Screen Resolution:</strong> <span id="resolution"></span></li>
+            <li class="list-style"><strong>Battery Level:</strong> <span id="battery-level"></span></li>
+            <li class="list-style"><strong>Coonetion type:</strong> <span id="connection-type"></span></li>
+            <li class="list-style"><strong>Screen Width:</strong> <span id="screen-width"></span> pixels</li>
+            <li class="list-style"><strong>Screen Height:</strong> <span id="screen-height"></span> pixels</li>
+            <li class="list-style"><strong>Pixel Depth:</strong> <span id="pixel-depth"></span> bits per pixel</li>
+        
+        </ul>
+    </div>
+    </div>
+
+ <footer>
+    <p class="ft-p">Built by <a class="link" href="#">Fuzail Mansuri</a></p>
+ </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
